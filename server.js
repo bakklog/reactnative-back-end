@@ -39,7 +39,6 @@ const cors = require("cors");
 app.use("/api", cors());
 
 // TODO: Add routes
-const coreRoutes = require("./routes/core.js");
 const userRoutes = require("./routes/user.js");
 const tchatRoutes = require("./routes/tchat.js");
 
