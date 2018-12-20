@@ -103,3 +103,5 @@ router.get("/:id", isAuthenticated, function(req, res, next) {
         return next(err.message);
     });
 });
+
+module.exports = router;
