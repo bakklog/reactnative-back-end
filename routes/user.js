@@ -78,3 +78,28 @@ router.post("/update", isAuthenticated, uploadPictures, function(req, res, next)
         }
     });
 });
+
+// Authentication is required for this route
+router.get("/:id", isAuthenticated, function(req, res, next) {
+    User.findById(req.params.id)
+    // .select("account")
+    .exec()
+    .then(function(user) {
+        if (!user) {
+            res.status(404);
+            return next("User not found");
+        }
+
+        return res.json({
+            _id: user._id,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            account: user.account,
+            email: user.email
+        });
+    })
+    .catch(function(err) {
+        res.status(400);
+        return next(err.message);
+    });
+});
