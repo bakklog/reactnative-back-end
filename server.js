@@ -27,7 +27,6 @@ app.use(bodyParser.json({ limit: "50mb" }));
 
 // Initialization of modules
 
-// TODO: Add modules
 const User = require("./models/User");
 const Thread = require("./models/Thread");
 const Message = require("./models/Message");
