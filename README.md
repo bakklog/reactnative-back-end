@@ -4,7 +4,7 @@ React Native backend is a boilerplate repository for setting up a Mongo & Expres
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Make sure you have NodeJS installed before you commit to installing this backend boilerplate.
 
 ```bash
 git clone https://github.com/scopeweb/react-native-backend.git
@@ -14,12 +14,10 @@ npm install
 
 ## Usage
 
-```python
-import foobar
+After installing the required packages in the Installation step you can run the local development setup
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+npm run dev
 ```
 
 ## Contributing
