@@ -62,3 +62,19 @@ router.post("/log_in", function(req, res) {
         }
     });
 });
+
+router.post("/update", isAuthenticated, uploadPictures, function(req, res, next) {
+    User.findOne({ token: req.user.token }).exec(function(err, user) {
+        console.log(req.user.token);
+        if (user) {
+            user.email = req.body.email;
+            user.account.phone = req.body.phone;
+            user.account.photos = req.pictures || user.account.photos;
+
+            user.save(function(err, savedUser) {
+                console.log(err, savedUser);
+                res.status(200).json(savedUser);
+            });
+        }
+    });
+});
