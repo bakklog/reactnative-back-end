@@ -32,4 +32,4 @@ See anything else you'd like to add here? Please send a pull request as well!
 
 ---
 
-Made with ❤️ by [Scope](https://scopeweb.nyc). Happy coding!
+Made with ❤ ️by [Scope](https://scopeweb.nyc). Happy coding!
