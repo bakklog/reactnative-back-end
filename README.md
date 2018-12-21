@@ -1,5 +1,7 @@
 # React Native Backend
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Scopeweb/reactnative-back-end.svg)](https://greenkeeper.io/)
+
 React Native backend is a boilerplate repository for setting up a Mongo & Express backend server for any React Native application.
 
 ## Installation
